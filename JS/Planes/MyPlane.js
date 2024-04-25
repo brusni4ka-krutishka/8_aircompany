@@ -1,11 +1,9 @@
 const Plane = require('./Plane');
 
-class MyPlane  extends Plane {
-
-    constructor(model, maxSpeed, maxFlightDistance, maxLoadCapacity) {
-        super(model, maxSpeed, maxFlightDistance, maxLoadCapacity);
-
-    }
+class CustomPlane extends Plane {
+  constructor(model, maxSpeed, maxFlightDistance, maxLoadCapacity) {
+    super(model, maxSpeed, maxFlightDistance, maxLoadCapacity);
+  }
 }
 
-//TODO implement it later
+// TODO: Implement additional functionality if needed

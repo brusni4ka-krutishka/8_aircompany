@@ -86,7 +86,7 @@ public class AirportTest {
                 Assert.fail("Test failed!");
             }
         }
-        // if not failed
+        Assert.assertTrue();
     }
 
     @Test
@@ -96,10 +96,9 @@ public class AirportTest {
         boolean hasUnclassifiedPlanes = false;
         for(experimentalPlane experimentalPlane : experimentalPlanes){
             if(experimentalPlane.getClassificationLevel() == ClassificationLevel.UNCLASSIFIED){
-                hasUnclassifiedPlanes = true;
-                break;
+                Assert.fail("Test failed!");
             }
         }
-        Assert.assertFalse(hasUnclassifiedPlanes);
+        Assert.assertTrue();
     }
 }
